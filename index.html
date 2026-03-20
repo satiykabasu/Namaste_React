@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+    <div id="root">
+        <!-- work like a container -->
+       <h1>Hello world from HTML</h1>
+    </div>
+    <script>
+        // here create h1 tag inside js => use document.createElement(kind of api)=> which helps to create html tag inside js
+        const heading=document.createElement("h1");
+        //NOW we give the value h1 to hello world
+        heading.innerHTML="Hello World from js";
+        //Now i want to get reference of => <div id="root">
+        const root=document.getElementById("root");
+        //now using appendChild(method which is there for every html node) for insert heading inside the root (div)
+        root.appendChild(heading);
+
+         /*Now how did the browser will get understand document.createElement()/getElementById() (what it is)=>superpower of the browser
+         which already have of the browser(as js engine in it and run through it) but browser did not understand react => you
+        have to get react here =>1. go to cdn liberery where react website is hosted we just fetch react from there and put in our code 
+        using cdn link 
+        /*
+    </script>
+</body>
+</html>
